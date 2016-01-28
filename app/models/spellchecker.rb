@@ -116,7 +116,7 @@ class Spellchecker
         eds = known_edits2(w) #try distance 2 edits
       end
       unless (eds.empty?)
-        #eds.sort_by! {|e| 1-@dictionary[e]} #sorting was moved to 'known' method
+        #eds.sort_by! {|e| 1-@dicWebSpellcheckertionary[e]} #sorting was moved to 'known' method
         return eds
       else
         return nil 
